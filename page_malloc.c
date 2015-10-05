@@ -11,7 +11,7 @@
 #define	PAGE_ALIGN(x)	((void *)((unsigned long)((x) + PAGE_SIZE - 1) & ~(PAGE_SIZE - 1)))
 
 #undef DEBUG
-#undef ALIGN_PTRSIZE	/* malloc return pointer aligned address (default) */
+#define ALIGN_PTRSIZE	/* malloc return pointer aligned address (default) */
 
 struct mallochdr {
 	unsigned long magic;
